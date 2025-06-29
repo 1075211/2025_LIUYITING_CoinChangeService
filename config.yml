@@ -1,0 +1,9 @@
+server:
+  type: default
+  applicationConnectors:
+    - type: http
+      port: 8080  # Application listening port
+  adminConnectors:
+    - type: http
+      port: 8081  # Dropwizard admin port
+maxTargetAmountLimit: 10000

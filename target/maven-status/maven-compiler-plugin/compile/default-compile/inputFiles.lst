@@ -1,0 +1,6 @@
+/Users/liuyiting/Desktop/CoinChangeService/src/main/java/org/example/coinchangeservice/CoinChangeApplication.java
+/Users/liuyiting/Desktop/CoinChangeService/src/main/java/org/example/coinchangeservice/CoinChangeConfiguration.java
+/Users/liuyiting/Desktop/CoinChangeService/src/main/java/org/example/coinchangeservice/health/CoinChangeHealthCheck.java
+/Users/liuyiting/Desktop/CoinChangeService/src/main/java/org/example/coinchangeservice/health/ExternalServiceClient.java
+/Users/liuyiting/Desktop/CoinChangeService/src/main/java/org/example/coinchangeservice/resources/CoinChangeResource.java
+/Users/liuyiting/Desktop/CoinChangeService/src/main/java/org/example/coinchangeservice/service/CoinChangeService.java

@@ -1,0 +1,7 @@
+org/example/coinchangeservice/CoinChangeApplication.class
+org/example/coinchangeservice/health/CoinChangeHealthCheck.class
+org/example/coinchangeservice/health/ExternalServiceClient.class
+org/example/coinchangeservice/CoinChangeConfiguration.class
+org/example/coinchangeservice/resources/CoinChangeResource.class
+org/example/coinchangeservice/resources/CoinChangeResource$Request.class
+org/example/coinchangeservice/service/CoinChangeService.class
