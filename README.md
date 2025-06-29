@@ -8,7 +8,7 @@ You can build the image either **locally (Mac/Linux)** or directly on a **remote
 
 ```bash
 # Navigate to the project directory
-cd CoinChangeService
+cd 2025_LIUYITING_CoinChangeService
 
 # Build the Docker image using the Dockerfile
 docker build -t coin-change-service .
