@@ -21,7 +21,6 @@ Run it locally:
 ```bash
 docker run -d -p 8080:8080 coin-change-service
 ```
-
 Or export it to a `.tar` file to transfer to a server:
 
 ```bash
@@ -45,3 +44,24 @@ docker load < coin-change-service.tar
 ```bash
 docker run -d --restart always -p 8080:8080 coin-change-service
 ```
+
+##  Project Structure
+
+```
+CoinChangeService/
+├── src/
+│   ├── main/java/...      # Source code
+├── config.yml             # Dropwizard configuration
+├── pom.xml                # Maven build config
+├── Dockerfile             # Docker multi-stage build
+└── README.md              # Project documentation
+```
+---
+
+## 🐘 Tech Stack
+
+* Java 17
+* Dropwizard
+* Maven
+* Docker
+* JUnit
