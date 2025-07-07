@@ -117,6 +117,35 @@ public class CoinChangeServiceTest {
 
         assertThat(result).containsExactly(0.01, 0.01, 0.01);
     }
+    @Test
+    public void testInvalidDenominationThrowsException() {
+        double targetAmount = 5.0;
+        List<Double> coins = List.of(0.03, 1.0); // 0.03
+
+        assertThatThrownBy(() -> service.calculateMinCoins(targetAmount, coins))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessageContaining("Invalid denomination");
+    }
+
+    @Test
+    public void testCalculateMinCoins_usingDP() {
+        double targetAmount = 6.0;
+        List<Double> coins = List.of(1.0, 5.0, 10.0);
+
+        List<Double> result = service.calculateMinCoins(targetAmount, coins, false);
+
+        assertThat(result).isNotEmpty();
+        assertThat(result.stream().mapToDouble(Double::doubleValue).sum()).isEqualTo(targetAmount);
+    }
+
+    @Test
+    public void testGreedyFailsToMatchAmount() {
+        double targetAmount = 3.0;
+        List<Double> coins = List.of(2.0);
+
+        List<Double> result = service.calculateMinCoins(targetAmount, coins, true);
+
+        assertThat(result).isEmpty();
+    }
+
 }
-
-
